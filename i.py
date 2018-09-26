@@ -21,11 +21,11 @@ for line in fileinput.input(['/data/Homo_sapiens.GRCh37.75.gtf']):
                     
 
 data = urllib.urlopen("http://rest.ensembl.org/overlap/id/ENSG00000130203.json?feature=variation")
-for i in data:
-    i ['id']
-    i ['consequence_type']
-    i ['clinical significance']
-    print "varaiant" [id] "is a"[consequnece_type] 
+json_obj = json.load(data)
+
+for i in json_obj:
+    print  i["id"],i["consequence_type"],i["clinical_significance"]
+   
     
 
 
