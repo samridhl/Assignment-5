@@ -26,7 +26,7 @@ for i in data:
     i ['consequence_type']
     i ['clinical significance']
     print "varaiant" [id] "is a"[consequnece_type] 
-    print jason_status
+    
 
 
 
